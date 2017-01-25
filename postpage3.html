@@ -1,0 +1,106 @@
+<html>
+<head>
+<title>Samat Demo</title>
+	<script type="text/javascript"
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>	
+	<style type="text/css">
+ul#menu, ul#menu ul {
+  list-style-type:none;
+  margin: 0px;
+  padding: 0px;
+  width: absolute;
+  font-family: "Century Gothic"
+}
+
+ul#menu a,ul#menu span { display: block; text-decoration: none; }
+
+ul#menu li { margin-top: 1px; }
+
+ul#menu li a,ul#menu li span {
+  background: #ffffff;
+  color: #1f87ae;
+  padding: 10px;
+}
+
+ul#menu li a:hover,ul#menu li span:hover { background: #ecece4; }
+
+ul#menu li ul li a {
+  background: #ffffff;
+  color: #1f87ae;
+  padding-left: 10px;
+}
+
+ul#menu li ul li a:hover {
+  background: #ecece4;
+  padding-left: 10px;
+}
+
+</style>
+
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<!--
+<link rel="stylesheet" type="text/css" href="tmp.css" />
+-->
+<style type="text/css">
+td {
+	position: relative;
+}
+.clone {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.clone > img {
+	width: 100%;
+	height: 100%;
+}
+
+</style>
+
+<style>
+        img {
+            cursor: pointer;
+        transition: -webkit-transform 0.1s ease
+        }
+    img:focus {
+        -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+    }
+
+
+div {
+    font-family: "Century Gothic"
+}
+
+</style>
+
+</head>
+<body>
+<br>
+	<ul id="menu" align="middle">
+ <li><span>CONTACTS</span>
+    <ul>
+     <li><a href="demowebsite.html">Casey & Samat</a></li>
+     <li><a href="postpage1.html">Manifesto</a></li>
+     <li><a href="postpage2.html">Concepts</a></li>
+    </ul>
+ </li>
+</ul>
+<br><div align="center">
+Active hours: 11:00-18:00, daily
+<br>
+<br>Rybachy, 86 
+<br>Issyk-kyol, Kyrgyz Republic
+<br>+996 3944 86 00 68 
+<br><a href="mailto:art.initiatives.bishkek@gmail.com">samatmambetshaev@gmail.com</a>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function() {
+ $("#menu ul").hide();
+ $("#menu li span").click(function() { $(this).next().slideToggle("normal"); });
+});
+</script>
+
+</body>
+</html>
